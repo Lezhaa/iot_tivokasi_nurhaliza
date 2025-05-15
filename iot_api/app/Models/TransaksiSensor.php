@@ -1,49 +1,20 @@
 <?php
 
 
-namespace App\Models;
+namespace App\Exports;
 
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use App\Models\TransaksiSensor;
+use Maatwebsite\Excel\Concerns\FromCollection;
 
 
-class TransaksiSensor extends Model
+class TransaksiSensorExport implements FromCollection
 {
-    use HasFactory;
-   
     /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'transaksi_sensor';
-
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'nama_sensor',
-        'nilai1',
-        'nilai2',
-    ];
-
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [];
-
-
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array
-     */
-    protected $casts = [];
+    * @return \Illuminate\Support\Collection
+    */
+    public function collection()
+    {
+        return TransaksiSensor::all();
+    }
 }
