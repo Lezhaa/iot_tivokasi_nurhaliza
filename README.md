@@ -1,4 +1,4 @@
-# Kumpulan Proyek IoT (Internet of Things) - Mata Kuliah Internet Of Things
+# Kumpulan Proyek IoT - Mata Kuliah Internet Of Things TI Vokasi UB
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/Lezhaa/iot_tivokasi_nurhaliza?style=for-the-badge)](https://github.com/Lezhaa/iot_tivokasi_nurhaliza/commits/main)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
